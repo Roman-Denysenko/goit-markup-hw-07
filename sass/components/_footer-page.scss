@@ -46,7 +46,7 @@
 }
 
 .logo-link {
-  & .logo-studio {
+  .logo-studio {
     color: $third-color;
   }
 }
@@ -56,7 +56,7 @@
 }
 
 .address {
-  & .contact-address {
+  .contact-address {
     color: rgba(255, 255, 255, 0.6);
   }
 }
@@ -95,14 +95,14 @@
 }
 
 .subscription {
-  & p {
+  p {
     margin: 0;
     padding: 0;
   }
 }
 
 .subscription {
-  & .footer-form-text {
+  .footer-form-text {
     margin-bottom: 20px;
     font-style: normal;
     font-weight: bold;
@@ -159,7 +159,7 @@
 }
 
 .btn-footer {
-  & .btn-footer-text {
+  .btn-footer-text {
     margin-right: 10px;
     font-style: normal;
     font-weight: bold;

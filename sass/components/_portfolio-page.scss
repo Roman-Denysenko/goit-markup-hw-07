@@ -128,7 +128,7 @@
 
 .port-items:hover,
 .port-items:focus {
-  & .port-text {
+   .port-text {
     transform: translate(-50%, -50%);
   }
 }

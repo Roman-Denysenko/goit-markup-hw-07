@@ -62,7 +62,7 @@
 }
 
 .socials-item {
-  & .logo-social {
+  .logo-social {
     align-items: center;
     fill: #afb1b8;
   }
@@ -70,7 +70,7 @@
 
 .social-link:hover,
 .social-link:focus {
-  & svg {
+  svg {
     fill: $third-color;
     transition-duration: $main-time;
     transition-timing-function: $main-cubic;

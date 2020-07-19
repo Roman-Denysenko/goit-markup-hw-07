@@ -53,7 +53,7 @@
 }
 
 .btn-close-modal:hover {
-  & .icon-close {
+   .icon-close {
     fill: $accent-color;
   }
 }
@@ -180,19 +180,21 @@
   appearance: none;
 }
 
-.security-text::before {
-  content: '';
-  display: inline-flex;
-  height: 16px;
-  width: 16px;
-  margin-right: 7px;
-  border: 3px solid $main-color-text;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition: background-color $main-time $main-cubic,
-    background-image $main-time $main-cubic;
-  cursor: pointer;
+.security-text {
+  &::before {
+    content: '';
+    display: inline-flex;
+    height: 16px;
+    width: 16px;
+    margin-right: 7px;
+    border: 3px solid $main-color-text;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition: background-color $main-time $main-cubic,
+      background-image $main-time $main-cubic;
+    cursor: pointer;
+  }
 }
 
 .checkbox-security:checked ~ .security-text::before {

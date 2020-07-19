@@ -24,13 +24,13 @@
 }
 
 .nav {
-  & .link.current {
+  .link.current {
     color: $accent-color;
   }
 }
 
-.nav {
-  & .link.current::after {
+.nav .link.current {
+  &::after {
     position: absolute;
 
     content: '';
@@ -46,7 +46,7 @@
 }
 
 .nav-list {
-  & .nav-items {
+  .nav-items {
     position: relative;
   }
 }
@@ -60,7 +60,7 @@
 }
 
 .nav-list {
-  & .link {
+  .link {
     display: block;
     padding-bottom: 32px;
     padding-top: 32px;
@@ -80,7 +80,7 @@
 
 .nav-contakt,
 .nav-list {
-  & .nav-items:not(:last-child) {
+  .nav-items:not(:last-child) {
     margin-right: 50px;
   }
 }
@@ -93,8 +93,8 @@
   @include centerflex;
 }
 .nav-contakt {
-  & .link-mail,
-  & .link-tel {
+  .link-mail,
+  .link-tel {
     @include centerflex(inline-flex);
   }
 }
